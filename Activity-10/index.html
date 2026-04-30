@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Activity 10: Tic-Tac-Toe with localStorage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Activity 10: Tic-Tac-Toe</h1>
+  <p>Open the browser console (F12) to see localStorage demonstrations!</p>
+
+  <div class="game-container">
+    
+    <div class="game-info">
+      <h2>Tic-Tac-Toe Game</h2>
+      <div id="statusMessage" class="status-message">
+        Player X's turn
+      </div>
+    </div>
+
+    <div id="gameBoard" class="game-board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <div class="game-controls">
+      <button id="newGameBtn" class="btn primary">New Game</button>
+    </div>
+
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

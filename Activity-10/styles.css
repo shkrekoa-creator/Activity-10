@@ -1,0 +1,54 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  text-align: center;
+  background: #667eea;
+  color: white;
+}
+
+.game-container {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.cell {
+  height: 100px;
+  background: #eee;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cell.taken {
+  cursor: not-allowed;
+}
+
+.cell.x {
+  color: blue;
+}
+
+.cell.o {
+  color: red;
+}
+
+.cell.winning {
+  background: lightgreen;
+}
+
+.btn {
+  padding: 10px 20px;
+  cursor: pointer;
+}
